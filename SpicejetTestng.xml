@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="2">
+<listeners>
+<listener class-name="utilityP2.ListernerSpicejet"></listener>
+</listeners>
+<parameter name="url" value="https://www.spicejet.com/"></parameter>
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testP2.TC0001__SignuptestP2"/>
+      <class name="testP2.TC0002__LogintestP2"/>
+      <class name="testP2.TC0003__OnewaytriptestP2"/>
+      <class name="testP2.TC0004__RoundTripP2"/>
+      <class name="testP2.TC0005__invalidSignin"/>
+      <class name="testP2.TC0006__InvalidLogin"/>
+      <class name="testP2.TC0007__invalidonewayP2"/>
+      <class name="testP2.TC0008__invalidRoundwayP2"/>
+      <class name="testP2.TC0009__Checkstapage"/>
+      <class name="testP2.TC0010__FlightStatusP2"/>
+      <class name="testP2.TC0011__MangeBookP2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <parameter name="url" value="https://www.spicejet.com/"/>
+  <listeners>
+    <listener class-name="utilityP2.ListernerSpicejet"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="2">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testP2.TC0003__OnewaytriptestP2">
+        <methods>
+          <include name="oneway"/>
+          <include name="closebrowser"/>
+          <include name="browserlaunch"/>
+        </methods>
+      </class> <!-- testP2.TC0003__OnewaytriptestP2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
