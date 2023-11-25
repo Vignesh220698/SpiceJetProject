@@ -8,13 +8,13 @@
   <test thread-count="5" name="Test(failed)" verbose="2">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testP2.TC0003__OnewaytriptestP2">
+      <class name="testP2.TC0010__FlightStatusP2">
         <methods>
-          <include name="oneway"/>
+          <include name="FlightSta"/>
           <include name="closebrowser"/>
           <include name="browserlaunch"/>
         </methods>
-      </class> <!-- testP2.TC0003__OnewaytriptestP2 -->
+      </class> <!-- testP2.TC0010__FlightStatusP2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

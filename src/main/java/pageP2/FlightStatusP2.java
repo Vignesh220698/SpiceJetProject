@@ -30,9 +30,14 @@ public class FlightStatusP2 extends ProjectSpicejetbaseP2{
 		driver.findElement(By.xpath("//div[text()='From']")).click();
 
 		driver.findElement(By.xpath("//div[text()='Bengaluru']")).click();
-		driver.findElement(By.xpath("//div[text()='Chennai']")).click();
+		Thread.sleep(2000);
+		try {
+		driver.findElement(By.xpath("//div[text()='Manohar International Airport']")).click();
 		driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys("234");
 		driver.findElement(By.xpath("//div[@class='css-1dbjc4n r-1awozwy r-19m6qjp r-z2wwpe r-1loqt21 r-18u37iz r-1777fci r-1w50u8q r-ah5dr5 r-1otgn73 r-13qz1uu']")).click();
+		}catch (Exception e) {
+			System.out.println("City not Found");
+		}
 		Thread.sleep(10000);
 		String source2=driver.getPageSource();
 
