@@ -23,7 +23,8 @@ public class InvalidLoginPageP2 extends ProjectSpicejetbaseP2{
 //        submit.click();
 		
         driver.findElement(By.xpath("//div[@class='css-1dbjc4n r-1awozwy r-184aecr r-z2wwpe r-1loqt21 r-18u37iz r-tmtnm0 r-1777fci r-1x0uki6 r-1w50u8q r-ah5dr5 r-1otgn73']")).click();
-		String source=driver.getPageSource();
+		Thread.sleep(3000);
+        String source=driver.getPageSource();
 		if(source.contains("Please enter a valid email address")) {
 			System.out.println("Negative Login Testing pass");
 		}else {
