@@ -63,7 +63,7 @@ public class SignUpPageP2 extends ProjectSpicejetbaseP2{
 		driver.findElement(By.xpath("//input[@id='c-password']")).sendKeys("Vignesh@1234");
 		//driver.findElement(By.xpath("//input[@type='checkbox']")).click();
 		
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 	}
 
 }

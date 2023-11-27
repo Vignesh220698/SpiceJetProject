@@ -85,14 +85,7 @@ Thread.sleep(10000);
 		Thread.sleep(5000);
 		
 		driver.findElement(By.xpath("(//span[text()='Skip this to skip comfort.'])[1]")).click();
-		
-		
-		
-		
-		
-		
-		
-		
+	
 		Thread.sleep(2000);
 		WebElement Refclick=driver.findElement(By.xpath("//h3[text()='Enter Debit / Credit Card Details']"));
 		Actions act3=new Actions(driver);
@@ -153,29 +146,14 @@ Thread.sleep(10000);
 			act.moveToElement(ProceedtoPay).click().perform();
 
 		
-			Thread.sleep(20000);
+			Thread.sleep(4000);
 			String Source2=driver.getPageSource();
 
-			if(Source2.contains("Invalid Card Details")) {
+			if(Source2.contains("Please enter a valid card")) {
 				System.out.println("Booking :Payment Sucessfull");
 			}else {
 				System.out.println("Booking :Payment failed");
 			}
-		
-		
-		
-		
-		
-		
-//		Thread.sleep(5000);
-//		
-//		WebElement Cardnumber =driver.findElement(By.xpath("(//label[@id='cardnumber'])[1]"));
-//
-//		act.moveToElement(Cardnumber).perform();
-//		
-//		driver.findElement(By.xpath("//input[@id='card_number']")).sendKeys("45678433");
-//		Thread.sleep(3000);
-//		driver.findElement(By.xpath("//div[text()='Proceed to pay']")).click();
 		
 	}
 

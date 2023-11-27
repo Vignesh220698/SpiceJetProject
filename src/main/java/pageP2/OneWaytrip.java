@@ -148,10 +148,10 @@ public class OneWaytrip extends ProjectSpicejetbaseP2{
 		//		Thread.sleep(3000);
 		//		driver.findElement(By.xpath("//div[text()='Proceed to pay']")).click();
 
-		Thread.sleep(20000);
+		Thread.sleep(3000);
 		String Source2=driver.getPageSource();
 
-		if(Source2.contains("Invalid Card Details")) {
+		if(Source2.contains("Please enter a valid card")) {
 			System.out.println("Booking :Payment Sucessfull");
 		}else {
 			System.out.println("Booking :Payment failed");
