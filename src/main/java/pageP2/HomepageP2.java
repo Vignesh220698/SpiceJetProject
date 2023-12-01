@@ -79,4 +79,8 @@ public class HomepageP2 extends ProjectSpicejetbaseP2{
 		driver.findElement(By.xpath("//div[text()='manage booking']")).click();
 		return new ManageBookingP2();
 	}
+	public NegativeLoginsP2 Neglogin() {
+		driver.findElement(By.xpath(" //div[text()='Login']")).click();
+		return new NegativeLoginsP2();
+	}
 }

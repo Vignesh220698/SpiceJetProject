@@ -19,6 +19,7 @@
       <class name="testP2.TC0009__Checkstapage"/>
       <class name="testP2.TC0010__FlightStatusP2"/>
       <class name="testP2.TC0011__MangeBookP2"/>
+      <class name="testP2.TC0012_NegLoginss"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

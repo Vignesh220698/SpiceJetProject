@@ -8,13 +8,14 @@
   <test thread-count="5" name="Test(failed)" verbose="2">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testP2.TC0004__RoundTripP2">
+      <class name="testP2.TC0012_NegLoginss">
         <methods>
-          <include name="RoundTrip"/>
+          <include name="excel"/>
           <include name="closebrowser"/>
+          <include name="Neglog" invocation-numbers="0 1 2"/>
           <include name="browserlaunch"/>
         </methods>
-      </class> <!-- testP2.TC0004__RoundTripP2 -->
+      </class> <!-- testP2.TC0012_NegLoginss -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
