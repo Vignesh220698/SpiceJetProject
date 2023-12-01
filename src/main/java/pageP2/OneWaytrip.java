@@ -31,8 +31,8 @@ public class OneWaytrip extends ProjectSpicejetbaseP2{
 		driver.findElement(By.xpath("(//div[text()='9'])[2]")).click();
 
 		driver.findElement(By.xpath("//div[text()='Passengers']")).click(); 
-		driver.findElement(By.xpath("(//div[contains(@class,'r-1awozwy')])[2]")).click();
-		driver.findElement(By.xpath("(//div[contains(@class,'r-1awozwy')])[1]")).click();
+		driver.findElement(By.xpath("(//div[contains(@class,'css-1dbjc4n r-1awozwy r-19m6qjp r-y47klf r-1loqt21 r-eu3ka r-')])[1]")).click();
+		driver.findElement(By.xpath("(//div[contains(@class,'css-1dbjc4n r-1awozwy r-19m6qjp r-y47klf r-1loqt21 r-eu3ka r-1777fci r-1otgn73 r-eafdt9 r-1i6wzkk r-lrvibr r-1aockid')])[1]")).click();
 		Thread.sleep(3000);
 
 
@@ -74,7 +74,7 @@ public class OneWaytrip extends ProjectSpicejetbaseP2{
 
 		driver.findElement(By.xpath("(//span[text()='Skip this to skip comfort.'])[1]")).click();
 
-        Thread.sleep(2000);
+		Thread.sleep(2000);
 		WebElement Refclick=driver.findElement(By.xpath("//h3[text()='Enter Debit / Credit Card Details']"));
 		Actions act1=new Actions(driver);
 		act1.moveToElement(Refclick).perform();
@@ -93,7 +93,7 @@ public class OneWaytrip extends ProjectSpicejetbaseP2{
 
 		driver.findElement(By.xpath("//input[@id='name_on_card']")).sendKeys("Vignesh S");
 
-		
+
 		//driver.switchTo().parentFrame();
 		driver.switchTo().defaultContent();
 
@@ -122,16 +122,16 @@ public class OneWaytrip extends ProjectSpicejetbaseP2{
 		driver.findElement(By.xpath("//input[@id='security_code']")).sendKeys("321");
 
 		driver.switchTo().defaultContent();
-        Thread.sleep(3000);
+		Thread.sleep(3000);
 		//driver.findElement(By.xpath("//div[@class='css-1dbjc4n r-1awozwy r-un1frt r-z2wwpe r-1loqt21 r-18u37iz r-1777fci r-6ity3w r-d9fdf6 r-9qu9m4 r-ah5dr5 r-1otgn73']")).click();
-		
-        WebElement refclick1 =driver.findElement(By.xpath("//span[text()='Terms and Conditions']"));		
+
+		WebElement refclick1 =driver.findElement(By.xpath("//span[text()='Terms and Conditions']"));		
 		act.moveToElement(refclick1).perform();
 
-        
-        Thread.sleep(3000);
+
+		Thread.sleep(3000);
 		WebElement ProceedtoPay =driver.findElement(By.xpath("//div[@class='css-1dbjc4n r-1awozwy r-un1frt r-z2wwpe r-1loqt21 r-18u37iz r-1777fci r-6ity3w r-d9fdf6 r-9qu9m4 r-ah5dr5 r-1otgn73']"));		
-			act.moveToElement(ProceedtoPay).click().perform();
+		act.moveToElement(ProceedtoPay).click().perform();
 
 
 
