@@ -59,12 +59,12 @@ public class OneWaytrip extends ProjectSpicejetbaseP2{
 		driver.findElement(By.xpath("(//input[@type='text'])[5]")).sendKeys("Kanchipuram");
 		driver.findElement(By.xpath("//div[text()='I am flying as the primary passenger']")).click();
 
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		WebElement continuebutton=driver.findElement(By.xpath("//div[text()='Continue']"));
 		Actions act= new Actions(driver);
 		act.moveToElement(continuebutton).click().perform();
 
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		WebElement continuebutton2=driver.findElement(By.xpath("//div[text()='Carry More On-board ']"));
 
 		act.moveToElement(continuebutton2).perform();
