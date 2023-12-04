@@ -51,7 +51,7 @@ public class UtilityP2 {
 	
 	public Object[][] ReadExcel(String Excelfile) throws IOException {
 
-		XSSFWorkbook book= new XSSFWorkbook("C:\\Users\\VIJAYAKUMAR P\\eclipse-workspace\\ProjectSpiceJet\\SpicejetExcel.xlsx");
+		XSSFWorkbook book= new XSSFWorkbook("./SpicejetExcel.xlsx");
 		XSSFSheet sheet = book.getSheet(Excelfile);
 
 		int rowcount= sheet.getLastRowNum();
