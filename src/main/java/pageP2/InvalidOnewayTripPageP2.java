@@ -34,7 +34,7 @@ public class InvalidOnewayTripPageP2 extends ProjectSpicejetbaseP2{
 
 		driver.findElement(By.xpath("//div[contains(@class,'css-1dbjc4n r-1awozwy r-z2')]")).click();
 		
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		
 		String source=driver.getPageSource();
