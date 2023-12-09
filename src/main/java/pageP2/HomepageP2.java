@@ -83,4 +83,9 @@ public class HomepageP2 extends ProjectSpicejetbaseP2{
 		driver.findElement(By.xpath(" //div[text()='Login']")).click();
 		return new NegativeLoginsP2();
 	}
+	
+	public NegativeSignup NegSignups() {
+		driver.findElement(By.xpath("//div[text()='Signup']")).click();
+		return new NegativeSignup();
+	}
 }
