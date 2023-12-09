@@ -96,7 +96,7 @@ public class SignUpPageP2 extends ProjectSpicejetbaseP2
 	public SignUpPageP2 submitbutton() throws InterruptedException {
 		Actions bulid = new Actions(driver);
 		bulid.moveToElement(submit).click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 //		String source=driver.getPageSource();
 //		
 //		if(source.contains("OTP Verification")) {
